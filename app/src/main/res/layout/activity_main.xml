@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button
+            android:text="手持ちRESET"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:id="@+id/resetbutton" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+            android:text="スタート"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:id="@+id/startbutton" android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="44dp" android:layout_marginStart="44dp"/>
+    <Button
+            android:text="掛け金DOWN"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:id="@+id/betdown" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp" android:layout_marginBottom="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="掛け金UP"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:id="@+id/betup" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
+            app:layout_constraintBottom_toTopOf="@+id/betdown" android:layout_marginBottom="72dp"/>
+    <ImageView
+            android:layout_width="166dp"
+            android:layout_height="150dp" app:srcCompat="@drawable/gamble_izonsyou"
+            android:id="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="236dp"
+            android:layout_marginStart="236dp" android:layout_marginTop="92dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline" app:layout_constraintGuide_begin="20dp"
+                                          android:orientation="vertical"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:textSize="32sp"
+            android:text="ミニスロットゲーム" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="316dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" android:text="手持ちコイン："
+            android:textSize="16sp" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp" android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/havecoin"/>
+    <TextView
+            android:text="掛け金："
+            android:layout_width="65dp"
+            android:layout_height="23dp"
+            android:id="@+id/textView3" android:textSize="16sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="44dp" android:layout_marginStart="44dp" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/betcoin"/>
+    <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/havecoin" android:textSize="16sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="44dp" android:layout_marginStart="44dp" android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"/>
+    <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/betcoin" android:textSize="16sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="44dp" android:layout_marginStart="44dp"
+            android:layout_marginBottom="152dp" app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>
